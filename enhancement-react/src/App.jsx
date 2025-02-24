@@ -1,11 +1,9 @@
-import NormalFormProvider from "./components/user-management/provider/NormalFormProvider"
-import Provider from "./components/user-management/provider/provider"
+import Post from "./components/Post"
 function App() {
 
   return (
     <>
-     <Provider/>
-     <NormalFormProvider/>
+    <Post/>
     </>
   )
 }
