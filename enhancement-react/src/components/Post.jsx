@@ -38,6 +38,7 @@ const Post = () => {
 
   return (
     <div>
+       <h1></h1>
       <input
         type="text"
         placeholder="title"
@@ -70,8 +71,8 @@ const Post = () => {
               {isPending && <h1>loading</h1>}
               <li key={pst.id}>post title:{pst.title}</li>
               <li>post summary:{pst.body}</li>
-              <button onClick={() => seteditingPost(pst)}>Edit Post</button>
-              <button onClick={() => handlePostDelete(pst.id)}>
+              <button onClick={() => seteditingPost(pst)} style={{border:'1px solid black'}} className="m-1">Edit Post</button>
+              <button onClick={() => handlePostDelete(pst.id)} style={{border:'1px solid black'}}>
                 Delete Post
               </button>
               <br />
